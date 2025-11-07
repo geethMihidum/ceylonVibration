@@ -1,0 +1,402 @@
+@font-face {
+    font-family: "Abel-Regular";
+    src: url("resources/fonts/Abel-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Honey";
+    src: url("resources/fonts/HoneyScript-Light.ttf");
+}
+
+.eventPicture {
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title01 {
+    font-family: "Abel-Regular";
+    font-size: 90px;
+    letter-spacing: 5px;
+}
+
+.p1 {
+    font-family: "Abel-Regular";
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.p2 {
+    font-family: "Abel-Regular";
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.gallery {
+    background-image: url("resources/images/IMG-20230619-WA0089.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 15rem;
+    width: 15rem;
+}
+
+.customPic {
+    max-height: 20rem;
+}
+
+.darkbg {
+    background-color: black;
+}
+
+.teamTitle{
+    font-family: "Honey";
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.timernumbers {
+    font-family: "Krona";
+    font-size: 14px;
+    font-weight: bolder;
+}
+/* .background{
+
+    background-image: url("images/backgroundimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+
+
+} */
+.background2{
+
+    background-image: url("images/backgroundimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-blend-mode: luminosity;
+
+}
+.eventbanner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:0px;
+    height: 425px;
+    box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+}
+.box:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.box:before{
+
+    background: black;
+    width: 100%;
+    opacity: 0.4;
+
+}
+.box{
+
+    display: flex;
+    
+
+}
+.pastEventsButton:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 600ms;
+
+}
+.timer{
+
+margin-top: -25px;
+position: relative;
+height: 110px;
+z-index: 2;
+background: rgb(231,230,236);
+background: linear-gradient(180deg, rgba(231,230,236,1) 0%, rgba(250,250,255,1) 39%, rgba(187,191,191,1) 100%);
+
+}
+.timer:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.eventdiv{
+
+z-index: 1;
+position: relative;
+
+}
+.eventdiv:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.timernumberbox{
+
+height: 50px;
+
+}
+.button{
+
+border-radius: 15px;
+width: 150px;
+
+}
+.button:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.galleryimg{
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:0px;
+        box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+        
+
+}
+.gallery{
+
+height: 100%;
+
+}
+/* sanka */
+
+@font-face {
+    font-family: "inter";
+    src: url("resources/fonts/Inter.ttf");
+}
+
+@font-face {
+    font-family: "Judson";
+    src: url("resources/fonts/Judson-Regular.ttf");
+}
+
+@font-face {
+    font-family: "KronaOne";
+    src: url("resources/fonts/KronaOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Kodchasan";
+    src: url("resources/fonts/Kodchasan-Regular.ttf");
+}
+
+@font-face {
+    font-family: "AbhayaLibre";
+    src: url("resources/fonts/AbhayaLibre-Regular.ttf");
+}
+
+
+@font-face {
+    font-family: "Krona";
+    src: url("resources/font/KronaOne-Regular.ttf");
+}
+
+.navButton{
+    font-family: "inter";
+    font-size: 18px;
+}
+
+.carouselExampleControls{
+    padding:5%;
+}
+
+.bannerText{
+    font-family: "Judson";
+}
+
+.bannerButton{
+    font-family: "inter";
+}
+
+.bannerButton:hover{
+    scale: 1.1;
+    transform: 1000ms;
+}
+
+.pastEventsTitle{
+    font-family: "KronaOne";
+    font-size: 42px;
+}
+
+.pastEventsText{
+    font-family: "Kodchasan";
+}
+
+.footerText{
+    font-family: "AbhayaLibre";
+}
+
+.footerSubscribe{
+    z-index: 3;
+    position: relative;
+    margin-top: -20px;
+    background-color: black;
+    padding: 10px;
+    font-family: "AbhayaLibre";
+}
+
+/* upcomingEvents */
+
+@font-face {
+    font-family: "Abel-Regular";
+    src: url("resources/font/Abel-Regular.ttf");
+}
+@font-face {
+    font-family: "Krona";
+    src: url("resources/font/KronaOne-Regular.ttf");
+}
+.title01 {
+    font-family: "KronaOne";
+    font-size: 42px;
+}
+
+.title02 {
+    font-family: "Krona";
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+
+}
+.timernumbers {
+    font-family: "Krona";
+    font-size: 25px;
+    font-weight: bolder;
+}
+/* .background{
+
+    background-image: url("images/backgroundimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+
+
+} */
+.background2{
+
+    background-image: url("images/backgroundimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y;
+    background-blend-mode: luminosity;
+
+}
+.eventbanner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:0px;
+    height: 425px;
+    box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 2px 32px -3px rgba(0,0,0,0.75);
+}
+.box:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.box:before{
+
+    background: black;
+    width: 100%;
+    opacity: 0.4;
+
+}
+.box{
+
+    display: flex;
+    
+
+}
+.pastEventsButton:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 600ms;
+
+}
+.timer{
+
+margin-top: -25px;
+position: relative;
+height: 110px;
+z-index: 2;
+background: rgb(231,230,236);
+background: linear-gradient(180deg, rgba(231,230,236,1) 0%, rgba(250,250,255,1) 39%, rgba(187,191,191,1) 100%);
+
+}
+.timer:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.eventdiv{
+
+z-index: 1;
+position: relative;
+
+}
+.eventdiv:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+.timernumberbox{
+
+height: 50px;
+
+}
+.button{
+
+border-radius: 15px;
+width: 150px;
+
+}
+.button:hover{
+
+    cursor: pointer;
+    scale: 1.03;
+    transition-duration: 400ms;
+
+}
+
+
+
+
+
+
+/* upcomingEvents */
+
+.pastEventsBtn{
+    font-family: "inter";
+}
+/* past Events  */
+
+
+/* sanka */

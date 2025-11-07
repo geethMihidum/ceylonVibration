@@ -1,0 +1,103 @@
+<?php
+require "connection.php";
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="resources/icons/B52DB3F0-649B-4D98-8DFF-9D13E80A193C.png">
+    <title>Ceylone Vibrations</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row">
+
+            <div class="background text-dark col-12 d-grid mx-auto">
+                <div class="row">
+                    <div class="col-12 ps-5 mt-3 pt-3 d-flex justify-content-center">
+                        <p class="title01">UPCOMING EVENTS</p>
+                    </div>
+
+                    <?php
+
+                    $event = Database::search("SELECT * FROM event WHERE status=1 order by date ASC LIMIT 0,3");
+                    $num = $event->num_rows;
+
+                    for ($y = 0; $y < $num; $y++) {
+                        $d = $event->fetch_assoc();
+
+                    ?>
+
+                        <div class="col-12 col-sm-8 col-md-4 col-lg-3 mt-4 px-1 d-flex justify-content-center mx-auto ">
+                            <div class="row">
+                                <?php
+                                $imgresult = Database::search("SELECT * FROM img WHERE `id`='" . $d["img_id"] . "'");
+                                $img = $imgresult->fetch_assoc();
+                                ?>
+                                <a href='<?php echo "eventSingleView.php?id=" . ($d["id"]) ?>'>
+                                    <div class="col-12 d-flex justify-content-center eventdiv">
+                                        <img src="<?php echo $img["name"];  ?>" class="eventbanner" />
+                                    </div>
+                                </a>
+                                <div class="col-6 d-flex justify-content-center mx-auto timer">
+                                    <div class="row">
+                                        <div class="text-dark col-12 d-flex justify-content-center pt-2">
+                                            <p class="title02">STARTING</p>
+                                        </div>
+                                        <div class="col-12 text-dark d-flex">
+                                            <div class="col-12 bg-dark text-white p-1 pt-3 d-flex justify-content-center timernumberbox">
+                                                <p class="timernumbers">
+                                                    <?php
+                                                    $currentDate = date('Y-m-d');
+                                                    $endDate = $d["date"];
+
+                                                    $startTime = strtotime($currentDate);
+                                                    $endTime = strtotime($endDate);
+
+                                                    $days = ($endTime - $startTime) / (60 * 60 * 24);
+
+                                                    echo $days;
+                                                    ?>
+                                                    DAYS MORE</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-7 mt-2 d-flex justify-content-center mx-auto">
+                                    <div class="row">
+                                        <button class="btn-dark button">View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <?php
+
+                    }
+
+                    ?>
+
+
+                    <div class="col-12 mt-5 d-flex justify-content-center mx-auto pb-5">
+                        <button class="btn pastEventsButton text-dark ">VIEW ALL <i class="bi bi-arrow-right"></i> </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
